@@ -1,12 +1,14 @@
 console.log ("is this working?");
 
-let input1 = document.querySelector(".name");
+let input1 = document.querySelector(".mood");
     console.log("input1 works");
-let input2 = document.querySelector(".quest");
+let input2 = document.querySelector(".ethic");
     console.log("input2 works");
 let button = document.querySelector("button");
 
 
+let judgement = document.querySelector(".answer");
+let questioning = document.querySelector(".question")
 
 button.onclick = function () {
     console.log ("button works");
@@ -15,9 +17,21 @@ let ans1 = input1.value;
 let ans2 = input2.value;
     console.log(ans2);
 
-if(ans1 === "apple" && ans2 === "orange") {
-    console.log("banana");
-} else if(ans1 === "milcery" && ans2 === "alcremie") {
-    console.log("Decorate");
+questioning.style.display = "none";
+judgement.style.display = "block";
+
+if(ans1 === "happy" && ans2 === "work") {
+    judgement.innerHTML = "rika";
+} else if(ans1 === "happy" && ans2 === "play") {
+    judgement.innerHTML = "poppy";
+} else if(ans1 === "sad" && ans2 === "work") {
+    judgement.innerHTML = "larry";
+} else if (ans1 === "sad" && ans2 === "play") {
+    judgement.innerHTML = "hassel";
+} else {
+    judgement.innerHTML = "what."
 }
+
+
+
 }

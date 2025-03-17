@@ -1,3 +1,12 @@
 h1 {
     color: red;
 }
+
+
+em {
+    color: blue;
+}
+
+.answer {
+    display: none;
+}
