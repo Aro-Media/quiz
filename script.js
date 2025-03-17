@@ -20,13 +20,13 @@ let ans2 = input2.value;
 questioning.style.display = "none";
 judgement.style.display = "block";
 
-if(ans1 === "happy" && ans2 === "work") {
+if(ans1 === "happy" && ans2 === "now") {
     judgement.innerHTML = "rika";
-} else if(ans1 === "happy" && ans2 === "play") {
+} else if(ans1 === "happy" && ans2 === "later") {
     judgement.innerHTML = "poppy";
-} else if(ans1 === "sad" && ans2 === "work") {
+} else if(ans1 === "sad" && ans2 === "now") {
     judgement.innerHTML = "larry";
-} else if (ans1 === "sad" && ans2 === "play") {
+} else if (ans1 === "sad" && ans2 === "later") {
     judgement.innerHTML = "hassel";
 } else {
     judgement.innerHTML = "what."
