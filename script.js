@@ -8,7 +8,7 @@ let button = document.querySelector("button");
 
 
 let judgement = document.querySelector(".answer");
-let questioning = document.querySelector(".question")
+let questioning = document.querySelector(".question");
 
 button.onclick = function () {
     console.log ("button works");
@@ -29,7 +29,7 @@ if(ans1 === "happy" && ans2 === "now") {
 } else if (ans1 === "sad" && ans2 === "later") {
     judgement.innerHTML = "hassel";
 } else {
-    judgement.innerHTML = "what."
+    judgement.innerHTML = "what.";
 }
 
 
