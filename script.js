@@ -10,6 +10,16 @@ let button = document.querySelector("button");
 let judgement = document.querySelector(".answer");
 let questioning = document.querySelector(".question");
 
+let Rika_desc = document.querySelector(".Rika_desc");
+Rika_desc.style.display = "none";
+let Poppy_desc = document.querySelector(".Poppy_desc");
+Poppy_desc.style.display = "none";
+let Larry_desc = document.querySelector(".Larry_desc");
+Larry_desc.style.display = "none";
+let Hassel_desc = document.querySelector(".Hassel_desc");
+Hassel_desc.style.display = "none";
+
+
 button.onclick = function () {
     console.log ("button works");
 let ans1 = input1.value;
@@ -17,19 +27,27 @@ let ans1 = input1.value;
 let ans2 = input2.value;
     console.log(ans2);
 
-questioning.style.display = "none";
+
 judgement.style.display = "block";
 
-if(ans1 === "happy" && ans2 === "now") {
-    judgement.innerHTML = "rika";
-} else if(ans1 === "happy" && ans2 === "later") {
-    judgement.innerHTML = "poppy";
-} else if(ans1 === "sad" && ans2 === "now") {
-    judgement.innerHTML = "larry";
-} else if (ans1 === "sad" && ans2 === "later") {
-    judgement.innerHTML = "hassel";
+if((ans1 === "happy" || ans1 === "Happy") && (ans2 === "now" || ans2 === "Now")) {
+    questioning.style.display = "none";
+    judgement.innerHTML = "YOU ARE: Rika";
+    Rika_desc.style.display = "block";
+} else if((ans1 === "happy" || ans1 === "Happy") && (ans2 === "later" || ans2 === "Later")) {
+    questioning.style.display = "none";
+    judgement.innerHTML = "YOU ARE: Poppy";
+    Poppy_desc.style.display = "block";
+} else if((ans1 === "sad" || ans1 === "Sad") && (ans2 === "now" || ans2 === "Now")) {
+    questioning.style.display = "none";
+    judgement.innerHTML = "YOU ARE: Larry";
+    Larry_desc.style.display = "block";
+} else if((ans1 === "sad" || ans1 === "Sad") && (ans2 === "later" || ans2 === "Later")) {
+    questioning.style.display = "none";
+    judgement.innerHTML = "YOU ARE: Hassel";
+    Hassel_desc.style.display = "block";
 } else {
-    judgement.innerHTML = "what.";
+    judgement.innerHTML = "Please make sure you've spelled everything correctly. Try again.";
 }
 
 
