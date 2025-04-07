@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
 
 body {
     font-family: "Roboto", sans-serif;
@@ -44,7 +44,9 @@ em {
 }
 
 .pokelogo {
-    width: 23vw;
+    width: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 
