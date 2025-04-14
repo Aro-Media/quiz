@@ -44,9 +44,9 @@ em {
 }
 
 .pokelogo {
-    width: 300px;
     display: flex;
     justify-content: center;
+    width: 300px;
 }
 
 
