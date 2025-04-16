@@ -60,7 +60,7 @@ if((ans1 === "happy" || ans1 === "Happy") && (ans2 === "now" || ans2 === "Now"))
     Hassel_Img.style.display = "block";
     Hassel_desc.style.display = "block";
 } else {
-    judgement.innerHTML = "Please make sure you've spelled everything correctly. Try again.";
+    judgement.innerHTML = "Please make sure you've spelled everything correctly. Try again. <br> <br> TIP: the blue words are the answers, type those in.";
 }
 
 
